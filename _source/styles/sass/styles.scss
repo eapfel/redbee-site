@@ -46,6 +46,16 @@ a [class^="icon-"], a [class*=" icon-"]{
     margin-top: 80px;
     padding: 20px 0;
 }
+.featurette {
+  padding: 100px 0;
+  h1,h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  article{
+    margin-top: 50px;
+  }
+}
 .main-footer a{
     color: #777;
     margin-left: 12px;
