@@ -1,3 +1,59 @@
-body{
+@import 'fonts';
+
+$color-red:#d10e1e;
+$color-red2:#d10b26;
+
+body {
     padding-top: 100px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ddd;
+    background-color: #222;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+a,.navbar-inverse .navbar-brand{
+  color: $color-red;
+}
+.navbar-inverse .navbar-brand{
+    font-size: 48px;
+    line-height: 1;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: $color-red;
+}
+a:hover, a:focus, .navbar-inverse .navbar-brand:hover {
+  color: $color-red2;
+}
+a [class^="icon-"], a [class*=" icon-"]{
+    font-size: 18px;
+}
+.navbar-nav > li > a{
+    padding-left: 22px;
+    padding-right: 22px;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.main-footer{
+    color: #999999;
+    margin-top: 80px;
+    padding: 20px 0;
+}
+.main-footer a{
+    color: #777;
+    margin-left: 12px;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:hover{
+        color: $color-red;
+        text-decoration: none;
+    }
 }
