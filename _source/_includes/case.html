@@ -1,0 +1,13 @@
+                    <article class="col-md-4 col-sm-6">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+{% if(include.image) %}
+                                <img class="media-object" src="images/{{include.image}}" />
+{% endif %}
+                            </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{include.name}}</h4>
+                            <p>{{include.description}}</p>
+                        </div>
+                        </div>
+                    </article>

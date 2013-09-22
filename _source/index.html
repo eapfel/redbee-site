@@ -65,3 +65,18 @@ title: redbee
                 </section>
             </div>
         </section>
+
+        <section id="casos-de-exito" class="featurette">
+            <div class="container">
+                <header>
+                    <h1>Casos de &eacute;xito</h1>
+                    <h2>Lorem ipsum</h2>
+                </header>
+
+                <section class="content row">
+{% for case in site.pages %}{% if case.category == 'casos' %}
+    {{}}{% include case.html name=case.name description=case.description %}
+{% endif %}{% endfor %}
+                </section>
+            </div>
+        </section>
