@@ -35,3 +35,18 @@ title: redbee
                 </section>
             </div>
         </section>
+
+        <section id="trabajos" class="featurette">
+            <div class="container">
+                <header>
+                    <h1>Trabajos</h1>
+                    <h2>Lorem ipsum</h2>
+                </header>
+
+                <section class="content row">
+{% for work in site.pages %}{% if work.category == 'trabajos' %}
+    {{}}{% include work.html name=work.name description=work.description %}
+{% endif %}{% endfor %}
+                </section>
+            </div>
+        </section>

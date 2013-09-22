@@ -61,6 +61,16 @@ a [class^="icon-"], a [class*=" icon-"]{
   article{
     margin-top: 50px;
   }
+  .media{
+    .pull-left{
+        width: 100px;
+        min-height: 100px;
+    }
+    .media-body{
+        padding-left: 10px;
+        border-left: 1px solid $color-red;
+    }
+  }
 }
 .person-image{
     width: 180px;
