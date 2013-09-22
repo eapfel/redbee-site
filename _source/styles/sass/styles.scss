@@ -48,15 +48,31 @@ a [class^="icon-"], a [class*=" icon-"]{
 }
 .featurette {
   padding: 100px 0;
+  &:nth-child(2n){
+    background-color: #1f1f1f;
+  }
   h1,h2{
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  h1 + h2{
+    font-size: 18px;
   }
   article{
     margin-top: 50px;
   }
 }
-.main-footer a{
+.person-image{
+    width: 180px;
+    height: 180px;
+    background-color: #eee;
+    border-radius: 90px;
+    margin: 20px auto;
+}
+.person{
+    text-align: center;
+}
+.person a, .main-footer a{
     color: #777;
     margin-left: 12px;
     &:first-child{

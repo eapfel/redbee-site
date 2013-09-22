@@ -20,3 +20,18 @@ title: redbee
                 </article>
             </div>
         </section>
+
+        <section id="nosotros" class="featurette">
+            <div class="container">
+                <header>
+                    <h1>Nosotros</h1>
+                    <h2>Lorem ipsum</h2>
+                </header>
+
+                <section class="content row">
+{% for person in site.pages %}{% if person.category == 'nosotros' %}
+    {{}}{% include person.html name=person.name linkedin=person.linkedin twitter=person.twitter email=person.email job=person.job description=person.description image=person.image %}
+{% endif %}{% endfor %}
+                </section>
+            </div>
+        </section>

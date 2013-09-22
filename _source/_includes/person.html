@@ -1,0 +1,25 @@
+                    <article class="col-md-3 col-sm-6 person">
+                        <address>
+                            <a href="http://www.linkedin.com/in/{{include.linkedin}}">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            <a href="http://twitter.com/{{include.twitter}}">
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="mailto:{{include.email}}">
+                                <i class="icon-envelope-alt"></i>
+                            </a>
+                        </address>
+                        <figure>
+                            <div class="person-image">
+{% if(include.image) %}
+                                <img src="images/{{include.image}}" />
+{% endif %}
+                            </div>
+                            <figcaption>
+                                <h3>{{include.name}}</h3>
+                                <h4>{{include.job}}</h4>
+                                <p>{{include.description}}</p>
+                            </figcaption>
+                        </figure>
+                    </article>
