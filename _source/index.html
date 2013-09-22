@@ -50,3 +50,18 @@ title: redbee
                 </section>
             </div>
         </section>
+
+        <section id="tecnologias" class="featurette">
+            <div class="container">
+                <header>
+                    <h1>Tecnolog&iacute;as</h1>
+                    <h2>Lorem ipsum</h2>
+                </header>
+
+                <section class="content row">
+{% for technology in site.pages %}{% if technology.category == 'tecnologias' %}
+    {{}}{% include technology.html name=technology.name description=technology.description %}
+{% endif %}{% endfor %}
+                </section>
+            </div>
+        </section>
