@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 
         watch: {
             compass: {
-                files: ['_source/styles/sass/{,*/}*.{scss,sass}'],
+                files: ['styles/sass/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server','exec:jekyll'],
                 options: {
                     livereload: true
@@ -21,7 +21,8 @@ module.exports = function (grunt) {
 
             jekyll: {
                 files: [
-                    '_source/{,*/}*.*',
+                    '{,*/}*.*',
+                    '!_site/{,*/}*.*'
                 ],
                 tasks: ['exec:jekyll'],
                 options: {
@@ -43,11 +44,11 @@ module.exports = function (grunt) {
 
         compass: {
             options: {
-                sassDir: '_source/styles/sass',
-                cssDir: '_source/styles',
-                imagesDir: '_source/images',
-                javascriptsDir: '_source/scripts',
-                fontsDir: '_source/styles/fonts',
+                sassDir: 'styles/sass',
+                cssDir: 'styles',
+                imagesDir: 'images',
+                javascriptsDir: 'scripts',
+                fontsDir: 'styles/fonts',
                 relativeAssets: true
             },
             server: {}

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTb3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/wMws1cEtxWZc6AZZIpiqWALUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSr3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzL3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hr3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxtws6VUGd0SOnU-R_teOl7k.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/O4NhV7_qs9r9seTo7fnsVLO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxrMceF-wWi3rV7g1_WXZh1k.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxiXIwCIIu6QKBvrtc7ntuuI.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxuBlR7hVfVEIC9TwMGFq8_Q.woff) format("woff");
+}
+
+/* line 6, sass/styles.scss */
+body {
+  padding-top: 100px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ddd;
+  background-color: #222;
+}
+
+/* line 13, sass/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 18, sass/styles.scss */
+a, .navbar-inverse .navbar-brand {
+  color: #d10e1e;
+}
+
+/* line 21, sass/styles.scss */
+.navbar-inverse .navbar-brand {
+  font-size: 48px;
+  line-height: 1;
+}
+
+/* line 25, sass/styles.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #d10e1e;
+}
+
+/* line 28, sass/styles.scss */
+a:hover, a:focus, .navbar-inverse .navbar-brand:hover {
+  color: #d10b26;
+}
+
+/* line 31, sass/styles.scss */
+a [class^="icon-"], a [class*=" icon-"] {
+  font-size: 18px;
+}
+
+/* line 34, sass/styles.scss */
+.navbar-nav > li > a {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+@media (min-width: 768px) {
+  /* line 39, sass/styles.scss */
+  .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+/* line 44, sass/styles.scss */
+.main-footer {
+  color: #999999;
+  margin-top: 80px;
+  padding: 20px 0;
+}
+
+/* line 49, sass/styles.scss */
+.featurette {
+  padding: 100px 0;
+}
+/* line 51, sass/styles.scss */
+.featurette:nth-child(2n) {
+  background-color: #1f1f1f;
+}
+/* line 54, sass/styles.scss */
+.featurette h1, .featurette h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 58, sass/styles.scss */
+.featurette h1 + h2 {
+  font-size: 18px;
+}
+/* line 61, sass/styles.scss */
+.featurette article {
+  margin-top: 50px;
+}
+/* line 65, sass/styles.scss */
+.featurette .media .pull-left {
+  width: 100px;
+  min-height: 100px;
+}
+/* line 69, sass/styles.scss */
+.featurette .media .media-body {
+  padding-left: 10px;
+  border-left: 1px solid #d10e1e;
+}
+
+/* line 75, sass/styles.scss */
+.person-image {
+  width: 180px;
+  height: 180px;
+  background-color: #eee;
+  border-radius: 90px;
+  margin: 20px auto;
+}
+
+/* line 82, sass/styles.scss */
+.person {
+  text-align: center;
+}
+
+/* line 85, sass/styles.scss */
+.person a, .main-footer a {
+  color: #777;
+  margin-left: 12px;
+}
+/* line 88, sass/styles.scss */
+.person a:first-child, .main-footer a:first-child {
+  margin-left: 0;
+}
+/* line 91, sass/styles.scss */
+.person a:hover, .main-footer a:hover {
+  color: #d10e1e;
+  text-decoration: none;
+}

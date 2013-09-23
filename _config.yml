@@ -1,5 +1,3 @@
 markdown: rdiscount
 exclude: [README.md, bower_components, node_modules, bower.json, package.json, Gruntfile.js, sass]
 relative_permalinks: false
-source: _source
-destination: _site
